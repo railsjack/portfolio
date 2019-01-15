@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'gmaps/index'
   get     'login', to: 'sessions#new'
   post    'login', to: 'sessions#create'
   get  'logout', to: 'sessions#destroy'
@@ -36,11 +37,13 @@ Rails.application.routes.draw do
   get '/testing-qa', to: 'static_pages#testing_qa'
   get '/co-development', to: 'static_pages#co_development'
   get '/dedicated-development-teams', to: 'static_pages#dedicated_development_teams'
+  get '/geocoder4rails', to: 'gmaps#geocoder4rails'
 
 
   resources :microposts
   resources :users
   resources :contacts
+  resources :gmaps
 
   root "static_pages#home"
 end
