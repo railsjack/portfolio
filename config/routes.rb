@@ -39,11 +39,17 @@ Rails.application.routes.draw do
   get '/dedicated-development-teams', to: 'static_pages#dedicated_development_teams'
   get '/geocoder4rails', to: 'gmaps#geocoder4rails'
 
+  get '/twilios/send_test', to: 'twilios#send_test'
+  get '/twilio-api', to: 'twilio_histories#iframe'
+  get '/twilio_histories/:id/delete', to: 'twilio_histories#destroy'
+
 
   resources :microposts
   resources :users
   resources :contacts
   resources :gmaps
+  resources :twilio_histories
+
 
   root "static_pages#home"
 end
