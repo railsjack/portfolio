@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   delete  'logout', to: 'sessions#destroy'
 
   get 'contact', to: 'contacts#new'
-  get 'case-studies', to: 'case_studies#index'
+  get 'portfolio', to: 'case_studies#index'
   get 'case-studies/hr'
   get 'industries/healthcare'
   get 'industries/retail'
