@@ -96,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
-              <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+              <caret line="42" selection-start-line="42" selection-end-line="42" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -435,12 +435,12 @@
       <workItem from="1546569282262" duration="17172000" />
       <workItem from="1546638972116" duration="34708000" />
       <workItem from="1546780440271" duration="25490000" />
-      <workItem from="1547417271961" duration="26470000" />
+      <workItem from="1547417271961" duration="26568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133487000" />
+    <option name="totallyTimeSpent" value="133585000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1024" height="687" extended-state="0" />
@@ -847,7 +847,7 @@
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+          <caret line="42" selection-start-line="42" selection-end-line="42" selection-end-column="14" />
         </state>
       </provider>
     </entry>
