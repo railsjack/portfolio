@@ -1,5 +1,6 @@
 class TwiliosController < ApplicationController
   require 'twilio-ruby'
+  skip_before_action :verify_authenticity_token
   def iframe
   end
 
@@ -51,9 +52,17 @@ class TwiliosController < ApplicationController
 
   def recv_sms
     message = params['Body']
-    File.open("sms-log.txt", "a") do |f|
-      f.puts DateTime.now.to_s + " "+message
-    end
+
+    @result = SmsMailer.with({message: message} ).reply.deliver_now
+
+    @log = "Started
+      sending email: #{@result}
+    "
+
+  end
+
+  def recv_sms_test
+
   end
 
   private
