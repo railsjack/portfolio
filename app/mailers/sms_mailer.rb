@@ -7,7 +7,7 @@ class SmsMailer < ApplicationMailer
 
     @message = params[:message]
 
-    mail from: 'jinnahrae@gmail.com', subject: 'Welcome'
+    mail from: 'twilio@outlook.com', subject: 'Welcome'
 
 
   end
