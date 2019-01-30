@@ -48,4 +48,17 @@ class TwiliosController < ApplicationController
     end
 
   end
+
+  def recv_sms
+    message = params['Body']
+    File.open("sms-log.txt", "a") do |f|
+      f.puts DateTime.now.to_s + " "+message
+    end
+  end
+
+  private
+  def custom_params
+    params.require(:twilio_history).permit(:from, :to, :body)
+  end
+
 end

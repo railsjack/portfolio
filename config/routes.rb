@@ -40,6 +40,8 @@ Rails.application.routes.draw do
   get '/geocoder4rails', to: 'gmaps#geocoder4rails'
 
   get '/twilios/send_test', to: 'twilios#send_test'
+  post '/twilio-api/recv-sms', to: 'twilios#recv_sms'
+
   get '/twilio-api', to: 'twilio_histories#iframe'
   get '/twilio_histories/:id/delete', to: 'twilio_histories#destroy'
 
