@@ -52,13 +52,12 @@ class TwiliosController < ApplicationController
 
   def recv_sms
     message = params['Body']
-
     @result = SmsMailer.with({message: message} ).reply.deliver_now
 
     @log = "Started
       sending email: #{@result}
     "
-
+    render layout: nil
   end
 
   def recv_sms_test
