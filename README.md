@@ -23,4 +23,4 @@ Things you may want to cover:
 
 * ...
 
-* changed for Michael again
+* changed for Michael
